@@ -73,16 +73,7 @@ def compute_distance(d1,d2):
 
 #def contact_map():
 
-def main():
-    """Main fonction"""
-    df = read_pdb("1jd4.pdb")
-    write_pdb(df,"nouveau.pdb")
-    selection=select_atoms(df,selector={'atom_name':['CA','CB'],'chain_identifier':['A']})
-    compute_distance(df.loc[151],df.loc[13])
 
-
-if __name__ == '__main__':
-    main()
 
 
 
